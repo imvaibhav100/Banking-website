@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<style>
+       * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+        #logo img{
+width: 100px;
+height: 90px;
+border-radius: 50%;
+        }
+       .nav-item .nav-link{
+        margin-left: 6px;
+    text-shadow: 0px 0px 1px black;
+    transition: 0.5s ease;
+    color: black;
+    font-size: 25px;
+    width: 150px;
+       }
+       .navbar-nav{
+        padding-right: 20%;
+display: flex;
+
+       }
+       nav{
+        background-image: linear-gradient(
+    120deg,
+    hsl(160, 79%, 42%),
+    hsl(275, 39%, 59%),hsl(164, 70%, 51%),
+    hsl(0, 31%, 74%)
+  );
+       }
+       .navbar-nav .nav-link:hover{
+color: rgb(255, 0, 0);
+scale: 1.2;
+       }
+#search input{
+    border-radius: 25px;
+    border: none;
+   width: 200px;
+}
+#search button{
+    border-radius: 50px;
+    color: white;
+    width: 80px;
+    background-color: #438151c4;
+  margin-right: 90px;
+}
+#search button:hover{
+    background-color:#ea0707;
+    transition: 2s;
+
+}
+#snd img{
+
+height: 400px;
+width: 500px;
+border-radius: 25px;
+float: right;
+margin-top: 30px;
+}
+
+#fst img{
+height: 400px;
+width: 500px;
+border-radius: 25px;
+text-align: center;
+float: left;
+}
+#snd{
+    text-align: center;
+    padding: 35px;
+}
+
+#fst{
+    text-align: center;
+    padding: 35px;
+}
+ #imgbtn{
+    transform: translate(-10%,1000%);
+    height: 45px;
+    width: 200px;
+    border-radius: 35px;
+    background-color: rgba(6, 38, 53, 0.724);
+    border: none;
+    font-weight: bold;
+    color: azure;
+  
+    
+}
+#imgbtn:hover{
+    background-color: rgb(152, 168, 241);
+    transition: 1.7s;
+    color: black;
+    font-weight: bolder
+    ;
+}
+#btnimg{
+    transform: translate(10%,1065%);
+    height: 45px;
+    width: 200px;
+    border-radius: 35px;
+    background-color: rgba(6, 38, 53, 0.724);
+    border: none;
+    font-weight: bold;
+    color: azure;
+
+}
+#btnimg:hover{
+    background-color: rgb(152, 168, 241);
+    transition: 1.7s;
+    color: black;
+    font-weight: bolder
+    ;
+}
+
+#mid h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    color: rgba(37, 213, 233, 0.702);
+    text-decoration: underline;
+    margin-top: 30px;
+    font-size: 50px;
+}
+#mid #para{
+    text-align: center;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 17px;
+   
+}
+#button1{
+   
+  padding: 12px 28px;
+  width: 250px;
+  border: none;
+  color: white;
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 400;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(
+    120deg,
+    hsl(205, 86%, 20%),
+    hsl(0, 25%, 30%)
+  );
+
+}
+#button1:hover{
+    background-image: linear-gradient(
+    120deg,
+    hsl(337, 84%, 47%),
+    hsl(175, 90%, 41%)
+  );
+    transition: 0.8s;
+    scale: 1.2;
+    font-variant: small-caps;
+    color: black;
+}
+#imageafter{
+    width: 500px;
+    height: 500px;
+   
+    border-radius: 15px;
+}
+#heading{
+    float: right;
+}
+#imageaft{
+    margin-left: 200px;
+    margin-top: 80px;
+}
+#heading{
+
+    margin-top: 150px;
+}
+#heading h1{
+    text-decoration: underline;
+    font-weight: bold;
+   
+    font-family: serif;
+   font-variant:small-caps;
+   background-image: linear-gradient(to left, #77ca88, #d39393);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+    
+}
+#imager{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.lll{
+    text-align: center;
+    margin-top: 60px;
+}
+#paragraph{
+ font-family: monospace;
+ font-weight: bold;
+ color: aliceblue;
+ overflow: hidden;
+
+ 
+}
+#footer{
+    padding: 0 0 30px 0px;
+    color: rgb(243, 241, 241);
+    font-size: 14px;
+    background-color: rgb(37, 53, 46);
+    margin-top: 100px;
+}
+#footer .footer-top{
+    padding: 60px 0 30px 0;
+    background-color: rgb(37, 53, 46);
+    color: rgb(255, 246, 246);
+}
+#footer .footer-top .footer-contact{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3{
+    color: #37f630;
+}
+#footer .footer-top .footer-contact h4{
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top .footer-contact p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: rgb(241, 237, 237);
+}
+#footer .footer-top h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#footer .footer-top .footer-links h4{
+    color: #55ff00;
+}
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-top .footer-links ul li{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-top .footer-links ul li a{
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+    display: inline-block;
+    line-height: 1;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+#footer .footer-top .footer-links ul li a:hover{
+    color: #ffc800;
+}
+#footer .footer-top .socail-links a{
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #373737;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    transition: 0.5s ease;
+}
+#footer .footer-top .socail-links a:hover{
+    background-color: #ffc800;
+    color: rgb(77, 1, 1);
+}
+#footer .copyright{
+    text-align: center;
+    float: left;
+
+}
+#footer .credits{
+    float: right;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+#footer .credits a{
+    color: #ffffff;
+}
+#bnb{
+    text-align: center;
+    margin-top: 70px;
+   
+}
+#bnb button{
+    width: 200px;
+    border-radius: 25px;
+    height: 50px;
+    background-color: #37f630;
+    border: transparent;
+    font-weight: bold;
+    font-family: serif;
+}
+#bnb button:hover{
+    background-image: linear-gradient(
+    120deg,
+    hsl(337, 84%, 47%),
+    hsl(175, 90%, 41%)
+  );
+    transition: 1s;
+    scale: 1.2;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+@keyframes typing {
+  from { width: 50% }
+  to { width: 100% }
+}
+
+
+</style>
+
+</head>
+<body style="background-color: black;">
+    <header>
+        <nav class="navbar navbar-expand-lg" id="nav">
+        <div class="container-fluid">
+            <a href="index.html" id="logo">
+                <img src="https://png.pngtree.com/png-vector/20190225/ourlarge/pngtree-concept-banking-logo-png-image_712958.jpg" alt="" srcset="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img src="menu.png" alt="" width="30px"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="nav-link active">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Services.html" class="nav-link active">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="About.html" class="nav-link active">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contact.html" class="nav-link active">Contact</a>
+                                    </li>
+                                    <li class="nav-item" id="loginNav">
+                                        <a href="Login.html" class="nav-link active">Login/Register</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex" id="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                                <div id="userIconContainer" style="display:none; position:relative;">
+                                    <button id="userIconBtn" style="background:none; border:none; outline:none; margin-left:10px;">
+                                        <i class="fa-solid fa-user" style="font-size:32px; color:#01194b; border-radius:50%; background:#fff; padding:6px;"></i>
+                                    </button>
+                                    <div id="logoutMenu" style="display:none; position:absolute; right:0; top:40px; background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.15); padding:10px; z-index:100;">
+                                        <button id="logoutBtn" style="background:#ea0707; color:#fff; border:none; border-radius:6px; padding:6px 18px; font-size:16px;">Logout</button>
+                                    </div>
+                                </div>
+                            </div></div>
+        </nav></header>  
+  <div class="row">
+        <div class="col-12" style="margin-top:40px;">
+            <h2 style="text-align:center;font-size:2.8rem;font-weight:700;color:#37f630;text-shadow:0 2px 8px #000;">Our Services</h2>
+            <p style="text-align:center;color:#fff;font-size:1.2rem;margin-bottom:40px;">Welcome! Explore our modern banking features designed for you.</p>
+            <div class="row" style="justify-content:center;gap:30px;">
+                <!-- Account Management Card -->
+                <div class="card" style="width: 22rem; background:rgba(255,255,255,0.08); border-radius:18px; box-shadow:0 2px 12px #37f63044; color:#222;">
+                    <div class="card-body" style="text-align:center;">
+                                                <i class="fa-solid fa-wallet" style="font-size:2.5rem;color:#37f630;margin-bottom:10px;"></i>
+                                                <h4 class="card-title" style="font-weight:700;">Account Management</h4>
+                                                <ul style="list-style:none;padding:0;color:#222;font-size:1.1rem;">
+                                                        <li><b>Withdraw & Deposit:</b> Manage your funds easily.</li>
+                                                        <li><b>Check Balance:</b> View your current balance anytime.</li>
+                                                        <li><b>Account Details:</b> Review your account info.</li>
+                                                </ul>
+                                                <!-- Only one Manage Account button -->
+                                                <button class="btn btn-success" style="margin-top:10px;border-radius:20px;" id="manageAccountBtn" type="button">Manage Account</button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content" style="background:#222;color:#fff;border-radius:18px;">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="accountModalLabel">Account Management</h5>
+                                                                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close" style="background:none;border:none;outline:none;font-size:1.7rem;line-height:1;color:#ea0707;position:relative;top:-2px;right:-2px;">
+                                                                    &times;
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div id="accountDetails">
+                                                                    <h6>Account Holder: <span id="accHolderName"></span></h6>
+                                                                    <h6>Account Number: <span id="accNumber">1234567890</span></h6>
+                                                                    <h6>IFSC: <span id="accIFSC">BANK0001234</span></h6>
+                                                                    <h6>Balance: ₹<span id="accBalance">50000</span></h6>
+                                                                </div>
+                                                                <hr>
+                                                                <div class="mb-3">
+                                                                    <label for="depositAmt" class="form-label">Deposit Amount</label>
+                                                                    <input type="number" class="form-control" id="depositAmt" min="1" placeholder="Enter amount">
+                                                                    <button class="btn btn-success mt-2" id="depositBtn">Deposit</button>
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label for="withdrawAmt" class="form-label">Withdraw Amount</label>
+                                                                    <input type="number" class="form-control" id="withdrawAmt" min="1" placeholder="Enter amount">
+                                                                    <button class="btn btn-danger mt-2" id="withdrawBtn">Withdraw</button>
+                                                                </div>
+                                                                <div id="accountMsg" style="color:#37f630;font-weight:600;margin-top:10px;"></div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                    </div>
+                </div>
+                <!-- Stock Trading Card -->
+                <div class="card" style="width: 22rem; background:rgba(255,255,255,0.08); border-radius:18px; box-shadow:0 2px 12px #37f63044; color:#222;">
+                    <div class="card-body" style="text-align:center;">
+                        <i class="fa-solid fa-chart-line" style="font-size:2.5rem;color:#37f630;margin-bottom:10px;"></i>
+                        <h4 class="card-title" style="font-weight:700;">Stock Trading</h4>
+                        <ul style="list-style:none;padding:0;color:#222;font-size:1.1rem;">
+                            <li><b>Buy & Sell Stocks:</b> Trade directly from your account.</li>
+                        </ul>
+                        <button class="btn btn-success" style="margin-top:10px;border-radius:20px;" id="tradeNowBtn" type="button">Trade Now</button>
+                        <!-- Trade Modal -->
+                        <div class="modal fade" id="tradeModal" tabindex="-1" aria-labelledby="tradeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background:#222;color:#fff;border-radius:18px;">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="tradeModalLabel">Stock Trading (Demo)</h5>
+                                        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close" style="background:none;border:none;outline:none;font-size:1.7rem;line-height:1;color:#ea0707;position:relative;top:-2px;right:-2px;">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="tradeUserInfo" style="margin-bottom:10px;">
+                                            <h6>User: <span id="tradeUserName"></span></h6>
+                                            <h6>Demo Balance: ₹<span id="tradeUserBalance">100000</span></h6>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <label for="stockSelect" class="form-label">Select Stock</label>
+                                            <select class="form-select" id="stockSelect">
+                                                <option value="RELIANCE">RELIANCE (₹2,500)</option>
+                                                <option value="TCS">TCS (₹3,800)</option>
+                                                <option value="HDFC">HDFC (₹1,700)</option>
+                                                <option value="INFY">INFY (₹1,400)</option>
+                                            </select>
+                                        </div>
+                                        <div class="mt-3">
+                                            <label for="tradeQty" class="form-label">Quantity</label>
+                                            <input type="number" class="form-control" id="tradeQty" min="1" placeholder="Enter quantity">
+                                        </div>
+                                        <div class="mt-3 d-flex justify-content-between">
+                                            <button class="btn btn-success" id="buyStockBtn">Buy</button>
+                                            <button class="btn btn-danger" id="sellStockBtn">Sell</button>
+                                        </div>
+                                        <div id="tradeMsg" style="color:#37f630;font-weight:600;margin-top:10px;"></div>
+                                        <hr>
+                                        <div>
+                                            <h6>Demo Portfolio:</h6>
+                                            <ul id="portfolioList" style="color:#fff;font-size:1rem;"></ul>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Calculators Card -->
+                <div class="card" style="width: 22rem; background:rgba(255,255,255,0.08); border-radius:18px; box-shadow:0 2px 12px #37f63044; color:#222;">
+                    <div class="card-body" style="text-align:center;">
+                        <i class="fa-solid fa-calculator" style="font-size:2.5rem;color:#37f630;margin-bottom:10px;"></i>
+                        <h4 class="card-title" style="font-weight:700;">Calculators</h4>
+                        <ul style="list-style:none;padding:0;color:#222;font-size:1.1rem;">
+                            <li><b>EMI Calculator</b></li>
+                            <li><b>Loan Calculator</b></li>
+                            <li><b>SIP Calculator</b></li>
+                            <li><b>Retirement Planning</b></li>
+                            <li><b>Currency Converter</b> (USD/INR etc.)</li>
+                        </ul>
+                        <button class="btn btn-success" style="margin-top:10px;border-radius:20px;" id="calcBtn" type="button">Try Calculators</button>
+                        <!-- Calculators Modal -->
+                        <div class="modal fade" id="calcModal" tabindex="-1" aria-labelledby="calcModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content" style="background:#222;color:#fff;border-radius:18px;">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="calcModalLabel">Banking Calculators</h5>
+                                        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close" style="background:none;border:none;outline:none;font-size:1.7rem;line-height:1;color:#ea0707;position:relative;top:-2px;right:-2px;">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="nav nav-tabs mb-3 justify-content-center flex-row" id="calcTabs" role="tablist" style="flex-wrap:nowrap;">
+                                            <li class="nav-item" role="presentation" style="display:inline-block;"><button class="nav-link active" id="emi-tab" data-bs-toggle="tab" data-bs-target="#emi" type="button" role="tab" style="min-width:120px;">EMI</button></li>
+                                            <li class="nav-item" role="presentation" style="display:inline-block;"><button class="nav-link" id="loan-tab" data-bs-toggle="tab" data-bs-target="#loan" type="button" role="tab" style="min-width:120px;">Loan</button></li>
+                                            <li class="nav-item" role="presentation" style="display:inline-block;"><button class="nav-link" id="sip-tab" data-bs-toggle="tab" data-bs-target="#sip" type="button" role="tab" style="min-width:120px;">SIP</button></li>
+                                            <li class="nav-item" role="presentation" style="display:inline-block;"><button class="nav-link" id="ret-tab" data-bs-toggle="tab" data-bs-target="#retirement" type="button" role="tab" style="min-width:120px;white-space:nowrap;">Retirement</button></li>
+                                            <li class="nav-item" role="presentation" style="display:inline-block;"><button class="nav-link" id="curr-tab" data-bs-toggle="tab" data-bs-target="#currency" type="button" role="tab" style="min-width:120px;">Currency</button></li>
+                                        </ul>
+                                        <div class="tab-content" id="calcTabContent">
+                                            <!-- EMI Calculator -->
+                                            <div class="tab-pane fade show active" id="emi" role="tabpanel">
+                                                <h6>EMI Calculator</h6>
+                                                <div class="row mb-2">
+                                                    <div class="col"><input type="number" class="form-control" id="emiAmount" placeholder="Loan Amount"></div>
+                                                    <div class="col"><input type="number" class="form-control" id="emiRate" placeholder="Interest Rate (%)"></div>
+                                                    <div class="col"><input type="number" class="form-control" id="emiTenure" placeholder="Tenure (months)"></div>
+                                                </div>
+                                                <button class="btn btn-success" id="emiCalcBtn">Calculate EMI</button>
+                                                <div id="emiResult" class="mt-2"></div>
+                                            </div>
+                                            <!-- Loan Calculator -->
+                                            <div class="tab-pane fade" id="loan" role="tabpanel">
+                                                <h6>Loan Calculator</h6>
+                                                <div class="row mb-2">
+                                                    <div class="col"><input type="number" class="form-control" id="loanAmount" placeholder="Principal"></div>
+                                                    <div class="col"><input type="number" class="form-control" id="loanRate" placeholder="Interest Rate (%)"></div>
+                                                    <div class="col"><input type="number" class="form-control" id="loanTenure" placeholder="Tenure (years)"></div>
+                                                </div>
+                                                <button class="btn btn-success" id="loanCalcBtn">Calculate Total Payable</button>
+                                                <div id="loanResult" class="mt-2"></div>
+                                            </div>
+                                            <!-- SIP Calculator -->
+                                            <div class="tab-pane fade" id="sip" role="tabpanel">
+                                                <h6>SIP Calculator</h6>
+                                                <div class="row mb-2">
+                                                    <div class="col"><input type="number" class="form-control" id="sipAmount" placeholder="Monthly SIP Amount"></div>
+                                                    <div class="col"><input type="number" class="form-control" id="sipRate" placeholder="Annual Return (%)"></div>
+                                                    <div class="col"><input type="number" class="form-control" id="sipTenure" placeholder="Tenure (years)"></div>
+                                                </div>
+                                                <button class="btn btn-success" id="sipCalcBtn">Calculate Maturity</button>
+                                                <div id="sipResult" class="mt-2"></div>
+                                            </div>
+                                            <!-- Retirement Calculator -->
+                                            <div class="tab-pane fade" id="retirement" role="tabpanel">
+                                                <h6>Retirement Planning</h6>
+                                                <div class="row mb-2">
+                                                    <div class="col"><input type="number" class="form-control" id="retCurrentAge" placeholder="Current Age"></div>
+                                                    <div class="col"><input type="number" class="form-control" id="retRetireAge" placeholder="Retirement Age"></div>
+                                                    <div class="col"><input type="number" class="form-control" id="retMonthlyExp" placeholder="Monthly Expense"></div>
+                                                    <div class="col"><input type="number" class="form-control" id="retInflation" placeholder="Inflation Rate (%)"></div>
+                                                </div>
+                                                <button class="btn btn-success" id="retCalcBtn">Calculate Retirement Corpus</button>
+                                                <div id="retResult" class="mt-2"></div>
+                                            </div>
+                                            <!-- Currency Converter -->
+                                            <div class="tab-pane fade" id="currency" role="tabpanel">
+                                                <h6>Currency Converter (USD/INR)</h6>
+                                                <div class="row mb-2">
+                                                    <div class="col"><input type="number" class="form-control" id="currAmount" placeholder="Amount"></div>
+                                                    <div class="col">
+                                                        <select class="form-select" id="currType">
+                                                            <option value="USDINR">USD to INR</option>
+                                                            <option value="INRUSD">INR to USD</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-success" id="currCalcBtn">Convert</button>
+                                                <div id="currResult" class="mt-2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+<hr style="color: black;">
+<div id="seconddiv" class="row">
+    <div id="imageaft" class="col">
+<img id="imageafter" src="https://www.wealthandfinance-news.com/wp-content/uploads/2021/01/online-banking.jpg" alt="" srcset="">
+</div>
+<div id="heading" class="col">
+    <h1>ONLINE BANKING SERVICE
+
+    </h1>
+    <div class="col" id="parag">
+        <p id="paragraph"><span class="initial">online banking, you aren't required to visit a bank branch to complete most of your</span><span class="elementone"> basic banking transactions. You can do all of this at your own convenience, wherever you</span> want—at home, at work, or on the go. Online banking can be done using a browser or app. Mobile banking is online banking that is done on a phone or tablet. Using online banking requires a computer, tablet, mobile phone, or other device, plus an Internet connection and a bank or debit card. In order to access the service, you need to register for the bank's online banking service and create a password. Once that's done, you can use the service to do your banking.<br><br><br>You can also monitor your accounts closely, allowing you to keep your accounts safe. Around-the-clock access to banking information provides early detection of fraudulent activity, thereby acting as a guardrail against financial damage or loss.</p>
+        </div>
+        <div class="col" id="bnb"><a href="about.html"><button>About</button></a></div>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+// Account Management Modal Logic & Calculators
+document.addEventListener('DOMContentLoaded', function() {
+    // Account Management
+    var manageBtn = document.getElementById('manageAccountBtn');
+    var accountModal = document.getElementById('accountModal');
+    var accHolderName = document.getElementById('accHolderName');
+    var accBalance = document.getElementById('accBalance');
+    var depositBtn = document.getElementById('depositBtn');
+    var withdrawBtn = document.getElementById('withdrawBtn');
+    var depositAmt = document.getElementById('depositAmt');
+    var withdrawAmt = document.getElementById('withdrawAmt');
+    var accountMsg = document.getElementById('accountMsg');
+    var balance = 50000;
+    var username = localStorage.getItem('loggedInUser') || 'Demo User';
+    if (accHolderName) accHolderName.textContent = username;
+    if (accBalance) accBalance.textContent = balance;
+
+    if (manageBtn && accountModal) {
+        manageBtn.addEventListener('click', function() {
+            var modal = new bootstrap.Modal(accountModal);
+            modal.show();
+            accountMsg.textContent = '';
+            depositAmt.value = '';
+            withdrawAmt.value = '';
+            accHolderName.textContent = localStorage.getItem('loggedInUser') || 'Demo User';
+            accBalance.textContent = balance;
+        });
+    }
+    if (depositBtn) {
+        depositBtn.addEventListener('click', function() {
+            var amt = parseInt(depositAmt.value);
+            if (!amt || amt < 1) {
+                accountMsg.textContent = 'Enter valid deposit amount.';
+                return;
+            }
+            balance += amt;
+            accBalance.textContent = balance;
+            accountMsg.textContent = '₹' + amt + ' deposited successfully!';
+            depositAmt.value = '';
+        });
+    }
+    if (withdrawBtn) {
+        withdrawBtn.addEventListener('click', function() {
+            var amt = parseInt(withdrawAmt.value);
+            if (!amt || amt < 1) {
+                accountMsg.textContent = 'Enter valid withdraw amount.';
+                return;
+            }
+            if (amt > balance) {
+                accountMsg.textContent = 'Insufficient balance!';
+                return;
+            }
+            balance -= amt;
+            accBalance.textContent = balance;
+            accountMsg.textContent = '₹' + amt + ' withdrawn successfully!';
+            withdrawAmt.value = '';
+        });
+    }
+
+    // Trade Now Feature
+    // Calculators Feature
+    var calcBtn = document.getElementById('calcBtn');
+    var calcModal = document.getElementById('calcModal');
+    // EMI
+    var emiAmount = document.getElementById('emiAmount');
+    var emiRate = document.getElementById('emiRate');
+    var emiTenure = document.getElementById('emiTenure');
+    var emiCalcBtn = document.getElementById('emiCalcBtn');
+    var emiResult = document.getElementById('emiResult');
+    // Loan
+    var loanAmount = document.getElementById('loanAmount');
+    var loanRate = document.getElementById('loanRate');
+    var loanTenure = document.getElementById('loanTenure');
+    var loanCalcBtn = document.getElementById('loanCalcBtn');
+    var loanResult = document.getElementById('loanResult');
+    // SIP
+    var sipAmount = document.getElementById('sipAmount');
+    var sipRate = document.getElementById('sipRate');
+    var sipTenure = document.getElementById('sipTenure');
+    var sipCalcBtn = document.getElementById('sipCalcBtn');
+    var sipResult = document.getElementById('sipResult');
+    // Retirement
+    var retCurrentAge = document.getElementById('retCurrentAge');
+    var retRetireAge = document.getElementById('retRetireAge');
+    var retMonthlyExp = document.getElementById('retMonthlyExp');
+    var retInflation = document.getElementById('retInflation');
+    var retCalcBtn = document.getElementById('retCalcBtn');
+    var retResult = document.getElementById('retResult');
+    // Currency
+    var currAmount = document.getElementById('currAmount');
+    var currType = document.getElementById('currType');
+    var currCalcBtn = document.getElementById('currCalcBtn');
+    var currResult = document.getElementById('currResult');
+
+    if (calcBtn && calcModal) {
+        calcBtn.addEventListener('click', function() {
+            var modal = new bootstrap.Modal(calcModal);
+            modal.show();
+            // Clear all results and inputs
+            if (emiResult) emiResult.textContent = '';
+            if (loanResult) loanResult.textContent = '';
+            if (sipResult) sipResult.textContent = '';
+            if (retResult) retResult.textContent = '';
+            if (currResult) currResult.textContent = '';
+        });
+    }
+    // EMI Calculator
+    if (emiCalcBtn) {
+        emiCalcBtn.addEventListener('click', function() {
+            var P = parseFloat(emiAmount.value);
+            var R = parseFloat(emiRate.value) / 12 / 100;
+            var N = parseInt(emiTenure.value);
+            if (!P || !R || !N) {
+                emiResult.textContent = 'Enter all values.';
+                return;
+            }
+            var emi = (P * R * Math.pow(1 + R, N)) / (Math.pow(1 + R, N) - 1);
+            emiResult.textContent = 'Monthly EMI: ₹' + emi.toFixed(2);
+        });
+    }
+    // Loan Calculator
+    if (loanCalcBtn) {
+        loanCalcBtn.addEventListener('click', function() {
+            var P = parseFloat(loanAmount.value);
+            var R = parseFloat(loanRate.value) / 100;
+            var N = parseInt(loanTenure.value);
+            if (!P || !R || !N) {
+                loanResult.textContent = 'Enter all values.';
+                return;
+            }
+            var total = P * Math.pow(1 + R, N);
+            loanResult.textContent = 'Total Payable: ₹' + total.toFixed(2);
+        });
+    }
+    // SIP Calculator
+    if (sipCalcBtn) {
+        sipCalcBtn.addEventListener('click', function() {
+            var A = parseFloat(sipAmount.value);
+            var r = parseFloat(sipRate.value) / 100 / 12;
+            var n = parseInt(sipTenure.value) * 12;
+            if (!A || !r || !n) {
+                sipResult.textContent = 'Enter all values.';
+                return;
+            }
+            var maturity = A * ((Math.pow(1 + r, n) - 1) / r) * (1 + r);
+            sipResult.textContent = 'Maturity Amount: ₹' + maturity.toFixed(2);
+        });
+    }
+    // Retirement Calculator
+    if (retCalcBtn) {
+        retCalcBtn.addEventListener('click', function() {
+            var age = parseInt(retCurrentAge.value);
+            var retireAge = parseInt(retRetireAge.value);
+            var monthlyExp = parseFloat(retMonthlyExp.value);
+            var inflation = parseFloat(retInflation.value) / 100;
+            if (!age || !retireAge || !monthlyExp || !inflation) {
+                retResult.textContent = 'Enter all values.';
+                return;
+            }
+            var years = retireAge - age;
+            var futureExp = monthlyExp * Math.pow(1 + inflation, years);
+            var corpus = futureExp * 12 * 20; // 20 years post retirement
+            retResult.textContent = 'Estimated Retirement Corpus: ₹' + corpus.toFixed(2);
+        });
+    }
+    // Currency Converter
+    if (currCalcBtn) {
+        currCalcBtn.addEventListener('click', function() {
+            var amt = parseFloat(currAmount.value);
+            var type = currType.value;
+            if (!amt) {
+                currResult.textContent = 'Enter amount.';
+                return;
+            }
+            var rate = 83; // Dummy USD/INR rate
+            if (type === 'USDINR') {
+                currResult.textContent = '₹' + (amt * rate).toFixed(2);
+            } else {
+                currResult.textContent = '$' + (amt / rate).toFixed(2);
+            }
+        });
+    }
+    var tradeBtn = document.getElementById('tradeNowBtn');
+    var tradeModal = document.getElementById('tradeModal');
+    var tradeUserName = document.getElementById('tradeUserName');
+    var tradeUserBalance = document.getElementById('tradeUserBalance');
+    var stockSelect = document.getElementById('stockSelect');
+    var tradeQty = document.getElementById('tradeQty');
+    var buyStockBtn = document.getElementById('buyStockBtn');
+    var sellStockBtn = document.getElementById('sellStockBtn');
+    var tradeMsg = document.getElementById('tradeMsg');
+    var portfolioList = document.getElementById('portfolioList');
+    // Dummy trading data
+    var tradeBalance = 100000;
+    var portfolio = {
+        'RELIANCE': 0,
+        'TCS': 0,
+        'HDFC': 0,
+        'INFY': 0
+    };
+    var stockPrices = {
+        'RELIANCE': 2500,
+        'TCS': 3800,
+        'HDFC': 1700,
+        'INFY': 1400
+    };
+
+    function updatePortfolioList() {
+        if (!portfolioList) return;
+        portfolioList.innerHTML = '';
+        var items = [];
+        Object.keys(portfolio).forEach(function(stock) {
+            var qty = portfolio[stock];
+            if (qty > 0) {
+                items.push(stock + ': ' + qty + ' shares');
+            }
+        });
+        if (items.length === 0) {
+            portfolioList.innerHTML = '<div style="color:#fff;">No stocks owned yet.</div>';
+        } else {
+            portfolioList.innerHTML = items.map(function(text) {
+                return '<div style="color:#fff;">' + text + '</div>';
+            }).join('');
+        }
+    }
+
+    if (tradeBtn && tradeModal) {
+        tradeBtn.addEventListener('click', function() {
+            var modal = new bootstrap.Modal(tradeModal);
+            modal.show();
+            tradeMsg.textContent = '';
+            tradeQty.value = '';
+            tradeUserName.textContent = localStorage.getItem('loggedInUser') || 'Demo User';
+            tradeUserBalance.textContent = tradeBalance;
+            updatePortfolioList();
+        });
+    }
+    if (buyStockBtn) {
+        buyStockBtn.addEventListener('click', function() {
+            var stock = stockSelect.value;
+            var qty = parseInt(tradeQty.value);
+            if (!qty || qty < 1) {
+                tradeMsg.textContent = 'Enter valid quantity.';
+                return;
+            }
+            var cost = stockPrices[stock] * qty;
+            if (cost > tradeBalance) {
+                tradeMsg.textContent = 'Insufficient balance!';
+                return;
+            }
+            tradeBalance -= cost;
+            portfolio[stock] += qty;
+            tradeUserBalance.textContent = tradeBalance;
+            tradeMsg.textContent = 'Bought ' + qty + ' shares of ' + stock + ' for ₹' + cost + '.';
+            tradeQty.value = '';
+            updatePortfolioList();
+        });
+    }
+    if (sellStockBtn) {
+        sellStockBtn.addEventListener('click', function() {
+            var stock = stockSelect.value;
+            var qty = parseInt(tradeQty.value);
+            if (!qty || qty < 1) {
+                tradeMsg.textContent = 'Enter valid quantity.';
+                return;
+            }
+            if (portfolio[stock] < qty) {
+                tradeMsg.textContent = 'Not enough shares to sell!';
+                return;
+            }
+            var proceeds = stockPrices[stock] * qty;
+            tradeBalance += proceeds;
+            portfolio[stock] -= qty;
+            tradeUserBalance.textContent = tradeBalance;
+            tradeMsg.textContent = 'Sold ' + qty + ' shares of ' + stock + ' for ₹' + proceeds + '.';
+            tradeQty.value = '';
+            updatePortfolioList();
+        });
+    }
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<footer id="footer">
+    <div class="footer-top">
+      <div style="background-color: rgb(37, 53, 46);border-radius: 25px;" class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Net Banking</h3>
+            <p>
+              Naini prayagraj Uttar pradesh <br>
+            </p>
+            <strong>Phone:</strong> +91 9506620945 <br>
+            <strong>Email:</strong> sdey06384@.com <br>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Usefull Links</h4>
+           <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+           </ul>
+          </div>
+
+
+
+         
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+
+           <ul>
+            <li><a href="#">Net Banking</a></li>
+            <li><a href="#">Providing Loans</a></li>
+            <li><a href="#">Interest</a></li>
+            <li><a href="#">Fixed Diposit</a></li>
+            <li><a href="#">Atm</a></li>
+           </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p>
+
+            <div class="socail-links mt-3">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-skype"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div style="border-radius: 25px;    background-color: rgb(37, 53, 46);height: 25px;" class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Vaibhav Shukla</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">Vaibhav Shukla</a>
+      </div>
+    </div>
+  </footer>
+
+       
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function updateNavbarUser() {
+        var loggedInUser = localStorage.getItem('loggedInUser');
+        var loginNav = document.getElementById('loginNav');
+        var userIconContainer = document.getElementById('userIconContainer');
+        if (loggedInUser) {
+            if (loginNav) loginNav.style.display = 'none';
+            if (userIconContainer) userIconContainer.style.display = 'flex';
+        } else {
+            if (loginNav) loginNav.style.display = '';
+            if (userIconContainer) userIconContainer.style.display = 'none';
+        }
+    }
+    updateNavbarUser();
+
+    var userIconBtn = document.getElementById('userIconBtn');
+    var logoutMenu = document.getElementById('logoutMenu');
+    if (userIconBtn && logoutMenu) {
+        userIconBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            logoutMenu.style.display = (logoutMenu.style.display === 'block') ? 'none' : 'block';
+        });
+        document.addEventListener('click', function(e) {
+            if (logoutMenu.style.display === 'block') logoutMenu.style.display = 'none';
+        });
+    }
+
+    var logoutBtn = document.getElementById('logoutBtn');
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', function() {
+            localStorage.removeItem('loggedInUser');
+            updateNavbarUser();
+            window.location.href = 'index.html';
+        });
+    }
+
+    window.addEventListener('storage', function(e) {
+        if (e.key === 'loggedInUser') updateNavbarUser();
+    });
+});
+</script>
+</body>
+</html>

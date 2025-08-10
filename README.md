@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Banking Website
 
 A modern, responsive online banking platform for managing your finances digitally. This project provides a seamless experience for users to access banking services, manage accounts, and perform transactions from anywhere.
@@ -79,3 +80,6 @@ Connect with us on:
 2. Open the `banking` folder.
 3. Open `index.html` in your browser.
 
+=======
+# Banking-website
+>>>>>>> e3774f992a9b7488c481c30a2566b902d1b55798
