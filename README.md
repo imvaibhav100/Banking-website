@@ -3,21 +3,7 @@
 
 A modern, responsive online banking platform for managing your finances digitally. This project provides a seamless experience for users to access banking services, manage accounts, and perform transactions from anywhere.
 
-## Features
 
-- **Online Net Banking / Digital Banking:**  
-  Manage your financial life online with a one-stop solution for spending, saving, budgeting, investing, and more.
-
-- **Account Management:**  
-  - Withdraw & Deposit funds  
-  - Check account balance  
-  - View account details
-
-- **Stock Trading:**  
-  - Buy & sell stocks directly from your account
-
-- **Calculators:**  
-  - EMI Calculator  
   - Loan Calculator  
   - SIP Calculator  
   - Retirement Planning  
