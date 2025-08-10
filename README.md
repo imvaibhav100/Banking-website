@@ -27,18 +27,6 @@ A modern, responsive online banking platform for managing your finances digitall
 ### Home Page
 ![Home Page](screenshots/home.png)
 
-### Services
-![Services](screenshots/services.png)
-
-### About Us
-![About Us](screenshots/about.png)
-
-### Banking Channels
-![Banking Channels](screenshots/channels.png)
-
-*(Replace the above image links with your actual screenshot paths after uploading them to the repository.)*
-
-## About Us
 
 Online banking provides greater accessibility for users, allowing account management from anywhere with an internet connection. The platform is designed to be user-friendly, cost-effective, and responsive, aiming to deliver superior banking services globally.
 
