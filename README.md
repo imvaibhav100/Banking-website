@@ -79,6 +79,3 @@ Connect with us on:
 2. Open the `banking` folder.
 3. Open `index.html` in your browser.
 
-## License
-
-© Copyright Vaibhav Shukla. All Rights Reserved.
